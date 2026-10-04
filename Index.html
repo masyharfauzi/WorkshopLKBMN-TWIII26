@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Workshop Laporan Keuangan & BMN Triwulan III 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f4f7f6 0%, #e2e8f0 100%);
+            color: #1e293b;
+        }
+        
+        .neumorph-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 4px 4px 10px #cbd5e1, -4px -4px 10px #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        .list-item-btn {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 2px 2px 6px #e2e8f0, -2px -2px 6px #ffffff;
+            transition: all 0.2s ease-in-out;
+            border: 1px solid #e2e8f0;
+        }
+
+        .list-item-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 12px #cbd5e1, -4px -4px 12px #ffffff;
+        }
+        
+        .list-item-btn:active {
+            box-shadow: inset 2px 2px 4px #cbd5e1, inset -2px -2px 4px #ffffff;
+            transform: translateY(0);
+        }
+
+        .category-header {
+            border-radius: 12px 12px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+        }
+
+        .header-link {
+            background: #bacfba;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 6px 15px rgba(37,99,235,.25);
+        }
+
+        .header-link:hover {
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.35);
+        }
+        
+        header.sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(8px);
+        }
+
+        
+    </style>
+</head>
+<body class="p-3 md:p-3">
+
+    <div class="max-w-[1500px] mx-auto">
+        
+<header class="sticky-header text-center mb-4 flex flex-col items-center neumorph-card p-4">
+
+    <!-- Tombol Dokumen Pendukung -->
+    <a href="https://drive.google.com/drive/folders/14iXC4aFarg4r-sw4Je1fUmg2cAAYc1gu?usp=sharing"
+       target="_blank"
+       class="fixed top-[10px] right-5 z-50 flex items-center gap-2 px-4 py-2 text-white text-sm font-semibold rounded-full transition-all duration-300 hover:scale-105 header-link">
+        <i class="fas fa-folder-open"></i>
+        Dokumen Pendukung
+    </a>
+    
+    <a href="https://us02web.zoom.us/j/2160918611?pwd=TGQiNrHHf5FgzEtnk09CHTzmamVd77.1&omn=88414808742"
+       target="_blank"
+       class="fixed top-[50px] right-5 z-50 flex items-center gap-2 px-4 py-2 text-white text-sm font-semibold rounded-full transition-all duration-300 hover:scale-105 header-link">
+        <i class="fas fa-users"></i>
+        Link Zoom
+    </a>
+    
+    
+    <h1 class="text-2xl md:text-3xl font-bold text-slate-800 tracking-tight leading-tight">
+        WORKSHOP LAPORAN KEUANGAN & BMN
+    </h1>
+
+    <p class="text-lg font-medium text-slate-500 mt-0">
+        TRIWULAN III TAHUN ANGGARAN 2026
+    </p>
+
+</header>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
+            
+            <!-- KOLOM 1: LO -->
+            <div class="neumorph-card overflow-hidden h-full flex flex-col">
+                <div class="category-header bg-slate-100 p-3 border-b border-slate-200 text-slate-700">
+                    <div class="w-7 h-7 rounded bg-slate-500 flex items-center justify-center text-white text-sm">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <span class="text-lg tracking-wide uppercase">LO</span>
+                </div>
+                <div class="p-4 flex-grow flex flex-col gap-2 text-xs font-medium text-slate-700">
+                    <a href="https://docs.google.com/spreadsheets/d/1X1Zg8uSoEqltxp4m1qpdPjf2v0u4nqRk/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-slate-700 text-left">01</span>
+                        <span class="text-left">PNBP</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1IiF9rkkvNRDVIoQ2zRQCJIcwXfGB7JNT/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-slate-700 text-left">02</span>
+                        <span class="text-left">Beban Pegawai</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1z5KiwSeFohxY1mbJtwgqx5izbcXMN_J_/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-slate-700 text-left">03</span>
+                        <span class="text-left">Beban Persediaan</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1INVn51UNYDKSb_Nq4W45pfOMPFh8MRmT/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-slate-700 text-left">04</span>
+                        <span class="text-left">Beban Barang dan Jasa</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1vv_L0E4yLBP0bAbB7-bcjRZ5QXAC8SkZ/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-slate-700 text-left">05</span>
+                        <span class="text-left">Beban Pemeliharaan</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/13SQKLYRwp5FJFny8eRN89FEDaj2frBCa/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-slate-700 text-left">06</span>
+                        <span class="text-left">Beban Perjalanan Dinas</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1VbE7w-ss6HS-4qB6jlPOkvmEFGWY6OfG/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-slate-700 text-left">07</span>
+                        <span class="text-left leading-snug">Beban Barang untuk Diserahkan ke Masyarakat (526)</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- KOLOM 2: NERACA -->
+            <div class="neumorph-card overflow-hidden h-full flex flex-col">
+                <div class="category-header bg-blue-50 p-3 border-b border-blue-100 text-blue-800">
+                    <div class="w-7 h-7 rounded bg-blue-600 flex items-center justify-center text-white text-sm">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <span class="text-lg tracking-wide uppercase">Neraca</span>
+                </div>
+                <div class="p-4 flex-grow flex flex-col gap-2 text-xs font-medium text-slate-700">
+                    <a href="https://docs.google.com/spreadsheets/d/1bX2BH11mqt7_rESX897DwbbWIF4wi5H2/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-blue-600 text-left">08</span>
+                        <span class="text-left leading-snug">Daftar Rekening Virtual Bendahara Pengeluaran</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/102KbbbObPJ2TquejnMwVpiLbzPhScHQq/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-blue-600 text-left">09</span>
+                        <span class="text-left">Utang Kepada Pihak Ketiga Lainnya (Akun 212191)</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1Q7pyDAOtSiy9hCVBRn6qclqPJHa_sKDB/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-blue-600 text-left">10</span>
+                        <span class="text-left">Rincian Piutang Bukan Pajak</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1BFxytwL_3L2oq9e0PeJDv00rQLzjOp6D/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-blue-600 text-left">11</span>
+                        <span class="text-left">Penjelasan Transaksi Gantung per Satker (Utang Pihak Ketiga Tahun Berjalan)</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1noO0XMhOTmyVtdHabFKR_gZRxD-weDDv/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-blue-600 text-left">12</span>
+                        <span class="text-left">Belanja Modal</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1vd2IKEqFcDXSWXr86xA9vugDC33jHrcg/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-blue-600 text-left">13</span>
+                        <span class="text-left leading-snug">Penjelasan Saldo KDP Per 30 September 2026</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1KswI8ndsfF99piv3ci7GTB9OV3WaOIyf/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-blue-600 text-left">14</span>
+                        <span class="text-left leading-snug">Kas Lainnya di Bendahara Pengeluaran</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1S8TWZHy6r44A70GoYi8rmBFDnnZjWM_V/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-blue-600 text-left">15</span>
+                        <span class="text-left leading-snug">Rincian Nilai Utang kepada Pihak Ketiga (Utang TA 2025 yang Dibayar TA 2026 / Jurnal Akrual)</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- KOLOM 3: LPE, LRA, LAINNYA -->
+            <div class="flex flex-col gap-6 h-full">
+                
+                <div class="neumorph-card overflow-hidden">
+                    <div class="category-header bg-cyan-50 p-3 border-b border-cyan-100 text-cyan-800">
+                        <div class="w-7 h-7 rounded bg-cyan-600 flex items-center justify-center text-white text-sm">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <span class="text-lg tracking-wide uppercase">LPE</span>
+                    </div>
+                    <div class="p-4 text-xs font-medium text-slate-700">
+                        <a href="https://docs.google.com/spreadsheets/d/11PdqTCdhGI4krHA2kVNOt7syZmBJ45Zm/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                            <span class="font-bold text-slate-400 group-hover:text-cyan-600 text-left">16</span>
+                            <span class="text-left leading-snug">Penjelasan Koreksi Nilai Aset Tetap non Revaluasi</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="neumorph-card overflow-hidden">
+                    <div class="category-header bg-indigo-50 p-3 border-b border-indigo-100 text-indigo-800">
+                        <div class="w-7 h-7 rounded bg-indigo-600 flex items-center justify-center text-white text-sm">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <span class="text-lg tracking-wide uppercase">LRA</span>
+                    </div>
+                    <div class="p-4 flex flex-col gap-2 text-xs font-medium text-slate-700">
+                        <a href="https://docs.google.com/spreadsheets/d/1zCGbfMs6kYgLh9x442hkWdQePR-mu3Ka/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                            <span class="font-bold text-slate-400 group-hover:text-indigo-600 text-left">17</span>
+                            <span class="text-left leading-snug">Penjelasan Terinci Pendapatan per Akun</span>
+                        </a>
+                        <a href="https://docs.google.com/spreadsheets/d/1WbOsO_gatLR7frRfeNeB-RWzfqT8l-DF/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                            <span class="font-bold text-slate-400 group-hover:text-indigo-600 text-left">18</span>
+                            <span class="text-left leading-snug">Penjelasan Terinci atas Pendapatan Lain-Lain</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="neumorph-card overflow-hidden flex-grow">
+                    <div class="category-header bg-teal-50 p-3 border-b border-teal-100 text-teal-800">
+                        <div class="w-7 h-7 rounded bg-teal-600 flex items-center justify-center text-white text-sm">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <span class="text-lg tracking-wide uppercase">LAINNYA</span>
+                    </div>
+                    <div class="p-4 flex flex-col gap-2 text-xs font-medium text-slate-700">
+                        <a href="https://docs.google.com/spreadsheets/d/1qrEBKl6B0g5rOVVKet4JigPIYNC6XRsc/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                            <span class="font-bold text-slate-400 group-hover:text-teal-600 text-left">19</span>
+                            <span class="text-left leading-snug">Penjelasan Selisih Belanja Barang Persediaan Konsumsi vs Pembelian</span>
+                        </a>
+                        <a href="https://docs.google.com/spreadsheets/d/1kPw9oYrQB2jJ0cigMKeyBlRFpSN8K2dD/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                            <span class="font-bold text-slate-400 group-hover:text-teal-600 text-left">20</span>
+                            <span class="text-left leading-snug">Penjelasan Selisih Belanja Barang Persediaan PM, GB vs Pembelian</span>
+                        </a>
+                        <a href="https://docs.google.com/spreadsheets/d/1BA2Ddv8MQe3IHDsshEAgmqSIblwScfIB/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                            <span class="font-bold text-slate-400 group-hover:text-teal-600 text-left">21</span>
+                            <span class="text-left leading-snug">Penjelasan Selisih Beban Persediaan vs Habis Pakai</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- KOLOM 4: BMN -->
+            <div class="neumorph-card overflow-hidden h-full flex flex-col">
+                <div class="category-header bg-sky-50 p-3 border-b border-sky-100 text-sky-800">
+                    <div class="w-7 h-7 rounded bg-sky-600 flex items-center justify-center text-white text-sm">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <span class="text-lg tracking-wide uppercase">BMN</span>
+                </div>
+                <div class="p-4 flex-grow flex flex-col gap-2 text-xs font-medium text-slate-700">
+                    <a href="https://docs.google.com/spreadsheets/d/1JIPZ-yLCO4UlZHzqY9j5zE8ZF37HkhQG/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-sky-600 text-left">22</span>
+                        <span class="text-left leading-snug">[LO] Pendapatan Pelepasan Aset non Lancar</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/17z9NsMvgxmc6UH28bGUQdyQ_q-cJUP0L/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-sky-600 text-left">23</span>
+                        <span class="text-left leading-snug">[LO] Rincian Pendapatan Pelepasan Aset non Lancar Tahun 2026</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1mAV_0QM5iT6ETneyDpVMvHfUa9MFW4sG/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-sky-600 text-left">24</span>
+                        <span class="text-left">[LO] Beban Pelepasan Aset</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1yt-hMb-ghjBUgJT1T9iQKMZkob2HxnZh/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-sky-600 text-left">25</span>
+                        <span class="text-left">[NERACA] Rincian Aset Tak Berwujud</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1-5M2oror1EB-Yfgb6Tt53CaDUz20noOz/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-sky-600 text-left">26</span>
+                        <span class="text-left">Data Pemanfaatan BMN</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1gCx-jtpZMKG2S1ZgYFpATUBIVxkQT25T/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-sky-600 text-left">27</span>
+                        <span class="text-left leading-snug">Progres Usul Hapus Aset Henti Guna</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/14kKlk2Uq0nAk21AdnkXHfuraEIJ2icWy/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-sky-600 text-left">28</span>
+                        <span class="text-left">Pengungkapan Lainnya</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1tNbQrL_iXgFIoEO5M4ig9YdbQx0ic7fq/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-sky-600 text-left">29</span>
+                        <span class="text-left leading-snug">Realisasi Bantuan Pemerintah BPPSDMP per Juni 2026</span>
+                    </a>
+                    <a href="https://docs.google.com/spreadsheets/d/1iRPL4hQPPUbAc9T-GuKOnAsHns_ErfoQ/" target="_blank" rel="noopener noreferrer" class="list-item-btn p-2.5 grid grid-cols-[20px_1fr] items-center gap-2 group">
+                        <span class="font-bold text-slate-400 group-hover:text-sky-600 text-left">30</span>
+                        <span class="text-left leading-snug">Penjelasan Mutasi Tambah Kurang BMN</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
